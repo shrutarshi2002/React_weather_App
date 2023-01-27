@@ -1,0 +1,125 @@
+.textInput {
+    font-size: large;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.textInput:focus {
+    outline: none;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px rgb(50, 100, 153);
+}
+
+.Button {
+    display: block;
+    margin: 10px auto;
+    padding: .5rem;
+    font-size: 1em;
+    background: darkcyan;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.Button:active {
+    background-color: rgb(7, 58, 58);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.Button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.Button span:after {
+    content: '🌦';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.Button:hover span {
+    padding-right: 25px;
+}
+  
+.Button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+  
+
+.Radio {
+    display: flex-inline;
+    align-items: center;
+  
+    border-radius: 100px;
+    padding: 14px 16px;
+    margin: 10px 0;
+  
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .Radio:hover,
+  .Radio:focus-within {
+    background: hsla(0, 0%, 80%, .14);
+  }
+  
+  .input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .rad_design {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+  
+    background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
+    position: relative;
+  }
+  
+  .rad_design::before {
+    content: '';
+  
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+  
+    background: hsl(0, 0%, 90%);
+    transform: scale(1.1);
+    transition: .3s;
+  }
+  
+  .input:checked+.rad_design::before {
+    transform: scale(0);
+  }
+  
+  .rad_text{
+    color: hsl(0, 0%, 50%);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+  
+    transition: .3s;
+  }
+  
+  .input:checked~.rad_text{
+    color: hsl(0, 0%, 30%);
+  }

@@ -1,0 +1,60 @@
+{
+  "name": "react-weather-app-arv1nt3",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "chart.js": "^3.5.0",
+    "dotenv": "^10.0.0",
+    "google-maps-react": "^2.0.6",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "react": "^17.0.1",
+    "react-bootstrap": "^2.0.0-beta.4",
+    "react-bootstrap-table-next": "^4.0.3",
+    "react-dom": "^17.0.1",
+    "react-open-weather-icons": "^0.1.1",
+    "react-responsive-list": "0.0.4",
+    "react-script-tag": "^1.1.2",
+    "react-scripts": "4.0.3",
+    "react-super-responsive-table": "^5.2.0",
+    "recharts": "^2.0.10",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "gh-pages": "^3.1.0"
+  },
+  "keywords": [],
+  "description": ""
+}
