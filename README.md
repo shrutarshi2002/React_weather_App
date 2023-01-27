@@ -36,5 +36,5 @@ Also, this library is smart enough to find out the appropriate components that n
 First, create a new component named CustomButton.tsx It is a very simple button component that takes a title as a prop.
 
 step 4 to Start server
-> npm start
+npm start ------ it will start server
 it will start 
